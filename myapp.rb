@@ -12,9 +12,6 @@ get "/secret" do
 end
 
 get "/cat" do
+  @name = ["Amigo", "Misty", "Almond"].sample
   erb(:index)
-end
-
-get "/name" do
-  erb "<h1>My name is <% Mei %></h1>"
 end
